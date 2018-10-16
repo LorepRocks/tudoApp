@@ -1,0 +1,39 @@
+<!--
+  Generated template for the AttendantPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Mensajes</ion-title>
+    <ion-buttons end>
+        <button (click)="logout()" ion-button icon-only>
+          <ion-icon name="log-out"></ion-icon>
+        </button>
+  
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+    <ion-card *ngFor = "let message of messages" (click)="openMessage(message)">
+        <ion-item>
+            <div class="button" *ngIf="!message.isOpen">
+                <i class="fa fa-globe"></i>
+                <span class="button__badge">Nuevo</span>
+            </div>
+            <p> Estudiante: {{message.studentFirstname}} {{message.studentLastname}}</p>
+            <p> Profesor: {{message.teacherFirstname}} {{message.teacherLastname}}</p>
+            <p> {{message.sendDate | date:'medium'}}</p>
+          </ion-item>
+        <ion-card-content>
+          {{message.content}}
+          </ion-card-content>
+      </ion-card>
+</ion-content>
