@@ -4,6 +4,7 @@ import { HomePage } from "../home/home";
 import { TeacherPage } from "../teacher/teacher";
 import { AuthProvider } from "../../providers/auth/auth";
 import { AttendantPage } from "../attendant/attendant";
+import { RegisterPage } from "../register/register";
 
 /**
  * Generated class for the LoginPage page.
@@ -44,6 +45,10 @@ export class LoginPage {
         alert.present();
       }
     })
+  }
+
+  register(){
+    this.navCtrl.setRoot(RegisterPage);
   }
 
   ionViewDidLoad() {

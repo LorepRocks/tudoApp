@@ -36,4 +36,8 @@ export class ApiProvider {
     return this.http.post(this.baseUrl + 'updateMessage', data).map(this.extractData);
   }
 
+  registerAttendant(data){
+    return this.http.post(this.baseUrl + 'createUser', data).map(this.extractData);
+  }
+
 }

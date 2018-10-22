@@ -42,7 +42,9 @@
       <ion-row>
         <ion-col class="signup-col">
           <button [disabled]="!formLogic.form.valid" ion-button class="submit-btn" full type="submit">Entrar</button>
+          <button ion-button class="submit-btn" full type="button"  (click)="register()">Registrarme</button>
         </ion-col>
+       
       </ion-row>
 
     </form>

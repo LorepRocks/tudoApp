@@ -13,6 +13,7 @@ import { TeacherPage } from '../pages/teacher/teacher';
 import { StudentPage } from '../pages/student/student';
 import { MessagePage } from '../pages/message/message';
 import { AttendantPage } from '../pages/attendant/attendant';
+import { RegisterPage } from '../pages/register/register';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AttendantPage } from '../pages/attendant/attendant';
     TeacherPage,
     StudentPage,
     MessagePage,
-    AttendantPage
+    AttendantPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { AttendantPage } from '../pages/attendant/attendant';
     TeacherPage,
     StudentPage,
     MessagePage,
-    AttendantPage
+    AttendantPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
